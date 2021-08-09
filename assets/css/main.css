@@ -576,3 +576,9 @@ footer a:hover{
 .swiper-button-next:after, .swiper-button-prev:after{
   color: #999 !important;
 }
+
+#checkout{
+    color: unset !important;
+    text-decoration: none !important;
+}
+

@@ -288,27 +288,26 @@
                 <div class="row">
                     <div class="col-12">
                         <h3 class="text-center text-yellow">APROVEITE!!
-                            <b><u>ÚLTIMAS UNIDADES</u> COM <b><u>FRETE GRÁTIS</u></b>
+                            <b><u>ÚLTIMAS UNIDADES</u></b>
                         </h3>
+
                         <div class="kit mt-4">
                             <div class="intro">MAIS VENDIDO<small>
                                     <p>Envio Imediato</p>
                                 </small></div>
                             <div class="block">
-                                <img class="img-fluid" src="./assets/images/golden/budajpg.jpeg">
-                                <p>De <s>R$ 439</s> por <b>R$267</b> ou em até 6x de</p>
-                                <h4>R$ 44,50</h4>
-                                <p>Sem juros no cartão</p>
+                                <a id="checkout">
+                                    <img class="img-fluid" src="./assets/images/golden/budajpg.jpeg">
+                                    <p>De <s>R$ 439</s> por <b>R$267</b> ou em até 6x de</p>
+                                    <h4>R$ 44,50</h4>
+                                    <p>Sem juros no cartão</p>
+                                </a>
                                 <div class="d-grid">
-                                    <a class="b-link" href="#preco"><button style="line-height: 21px;"
+                                    <a id="checkout" class="b-link" href="#preco"><button style="line-height: 21px;"
                                             class="btn-buy btn btn-primary gap-2 p-3" type="button"> COMPRAR
                                             AGORA</button></a>
                                     <div class="row">
-                                        <div class="col-6">
-                                            <img class="img-fluid frete mx-auto d-block mt-3"
-                                                src="./assets/images/golden/frete-gratis.png">
-                                        </div>
-                                        <div class="col-6">
+                                        <div class="col-12">
                                             <img class="img-fluid frete mx-auto d-block mt-3"
                                                 src="./assets/images/golden/correios.png">
                                         </div>
@@ -564,18 +563,17 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/lazysizes.min.js"></script>
     <script src="./assets/js/utm-transfer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         window.lazySizesConfig = {
             addClasses: true
         };
 
-        // var checkout = {
-        //     kitUm: 'https://seguro.chapinhasmart.com.br/r/B5TBQ8E80V',
-        // }
-
-        // var linkCheckout = document.getElementById('checkout');
-        // linkCheckout.href = checkout.kitUm;
+        // Link do Checkout 
+        var linkCheckout = 'https://seguro.goldenbarberpro.site/r/11FYDMWQZL';
+        var buttons = document.querySelectorAll("#checkout");
+        $(buttons).attr('href', linkCheckout);
 
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             autoplay: {
