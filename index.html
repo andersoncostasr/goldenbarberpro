@@ -8,8 +8,6 @@
     <title>Golden Barber Pro</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <meta name="facebook-domain-verification" content="pv5hdqy15fbl9qxdvch2yvia3pbgie" />
     <!-- Google Tag Manager -->
@@ -39,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="content mt-4 mt-md-5">
+        <div class="content mt-4 mb-4 mb-md-4 mt-md-5">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -59,50 +57,65 @@
                                 <li class="list-inline-item ava">1.629 avaliações</li>
                             </ul>
                         </div>
-                        <div class="swiper-container gallery-top">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-3.png">
+
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro2.gif">
                                 </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-4.png">
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro3.gif">
                                 </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-5.png">
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro4.gif">
                                 </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-2.png">
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro5.gif">
                                 </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-1.png">
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro1.gif">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/maquina.gif">
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="swiper-container gallery-thumbs">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-3.png">
-                                </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-4.png">
-                                </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-5.png">
-                                </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-2.png">
-                                </div>
-                                <div class="swiper-slide"><img class="img-fluid"
-                                        src="./assets/images/golden/slide/slide-1.png">
-                                </div>
-                            </div>
-                            <div class="swiper-button-next swiper-button-white"></div>
-                            <div class="swiper-button-prev swiper-button-white"></div>
-                        </div>
+
+
                         <div class="d-block d-sm-none mt-3">
-                            <a class="b-link" href="#preco"><button style="width: 100%;"
+                            <a id="checkout" class="" href="#preco"><button style="width: 100%; margin-top: 30px;"
                                     class="btn-buy btn btn-primary gap-2 p-3" type="button">QUERO COMPRAR
-                                    AGORA</button></a>
+                                    AGORA</button>
+                                <small class="m-1 text-center" style="color: blue; display: block; margin: 0 auto;">A
+                                    partir
+                                    de só
+                                    R$44,50</small>
+                            </a>
                             <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
                         </div>
                     </div>
@@ -131,38 +144,161 @@
                                 class="btn-buy btn btn-primary gap-2 p-3" type="button">QUERO COMPRAR
                                 AGORA</button></a>
                         <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
+
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="bg-black">
+
+
+    <div class="bg-black p-4 p-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="italic text-white text-center">AVALIAÇÕES DOS CLIENTES</h3>
+                    <ul class="list-inline mt-1 avaliacao text-center rate">
+                        <li class="list-inline-item"><i class="fas fa-star text-yellow"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-star text-yellow"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-star text-yellow"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-star text-yellow"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-star text-yellow"></i></li>
+                        <li class="list-inline-item rate text-white"><b>4,8</b></li>
+                        <li class="list-inline-item text-white"><b>.</b></li>
+                        <li class="list-inline-item text-white ava">1.629 avaliações</li>
+                    </ul>
+                    <div class="comment d-block mx-auto mt-4">
+                        <h4>ROBERTO FERREIRA DE CASTRO</h4>
+                        <small>Cliente Verificado <i class="fas fa-check-circle"></i></small>
+                        <br>
+                        <img src="https://i.ibb.co/vwrfYfz/estrelas-5.png">
+                        <p>Eu sempre desconfio muito de produtos pela internet mais depois de pesquisar muito escolhi
+                            essa Golden Barber Pro e não me arrependo, é 100%!</p>
+                    </div>
+                    <div class="comment d-block mx-auto">
+                        <h4>ACÁSSIO JUSTINO DA SILVA</h4>
+                        <small>Cliente Verificado <i class="fas fa-check-circle"></i></small>
+                        <br>
+                        <img src="https://i.ibb.co/GvrTgJh/estrelas-4.png">
+                        <p>Perfeita, Ótimo custo benefício, nunca mais perdi meu tempo e dinheiro com barbeiro recomendo
+                            pra quem tem barba grossa igual eu</p>
+                    </div>
+                    <div class="comment d-block mx-auto">
+                        <h4>HUGO LEONARDO</h4>
+                        <small>Cliente Verificado <i class="fas fa-check-circle"></i></small>
+                        <br>
+                        <img src="https://i.ibb.co/GvrTgJh/estrelas-4.png">
+                        <p>Corta muito bem, estou curtindo muito, só achei o fio do carregador um pouco pequeno pq minha
+                            tomada da cama fica muito longe</p>
+                    </div>
+                    <div class="comment d-block mx-auto">
+                        <h4>DIOGO TRINDADE</h4>
+                        <small>Cliente Verificado <i class="fas fa-check-circle"></i></small>
+                        <br>
+                        <img src="https://i.ibb.co/vwrfYfz/estrelas-5.png">
+                        <p>Corta bem, utilizo em meus clientes na barbearia, valeu apena.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="d-grid gap-2 col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <a id="checkout" class="" href="#preco"><button style="line-height: 21px;"
+                            class="btn-buy btn btn-primary gap-2 p-3" type="button">QUERO COMPRAR AGORA</button>
+                        <small class="m-1 text-center" style="color: white; display: block; margin: 0 auto;">A
+                            partir
+                            de só
+                            R$44,50</small></a>
+
+                    <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-white">
         <div class="p-4">
             <div class="container">
                 <div class="row alinhar">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h3 class="italic mt-3 d-block d-sm-none"><span class="text-white">FEITO PARA VOCÊ QUE:</span>
-                        </h3>
-                        <img src="./assets/images/golden/Maquina-Gif-1.gif">
+                        <h3 class="italic d-block d-sm-none text-center">FEITO PARA VOCÊ QUE:</h3>
+
+
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro2.gif">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro3.gif">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro4.gif">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro5.gif">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/barber-pro1.gif">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid lazyload" src="./assets/images/gif/maquina.gif">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+
+
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h3 class="italic mt-3 d-none d-sm-block"><span class="text-white">FEITO PARA VOCÊ QUE:</span>
+                        <h3 class="italic mt-3 d-none d-sm-block">FEITO PARA VOCÊ QUE:
                         </h3>
-                        <ul style="margin-bottom: 0" class="list-unstyled list-mobile mt-3">
-                            <li class="mb-2 text-white"><i class="fas fa-check text-yellow"></i> Corta o cabelo em casa
+                        <ul style="margin-bottom: 0;" class="list-unstyled list-mobile mt-5">
+                            <li class="mb-2"><i class="fas fa-check text-yellow"></i> Corta o cabelo em casa
                             </li>
-                            <li class="mb-2 text-white"><i class="fas fa-check text-yellow"></i> Faz a própria barba
+                            <li class="mb-2"><i class="fas fa-check text-yellow"></i> Faz a própria barba
                             </li>
-                            <li class="mb-2 text-white"><i class="fas fa-check text-yellow"></i> Precisa de um corte
+                            <li class="mb-2"><i class="fas fa-check text-yellow"></i> Precisa de um corte
                                 rápido</li>
-                            <li class="text-white"><i class="fas fa-check text-yellow"></i> Precisa de um barbear sem
+                            <li class=""><i class="fas fa-check text-yellow"></i> Precisa de um barbear sem
                                 irritação</li>
                         </ul>
-                        <img class="d-block d-sm-none mt-3" src="./assets/images/golden/Maquina-2.gif">
+                        <!-- <img class="d-block d-sm-none mt-3" src="./assets/images/gif/maquina.gif"> -->
                         <div class="d-grid gap-2 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <a class="b-link" href="#preco"><button class="btn-buy btn btn-primary gap-2 p-3 mt-4"
-                                    type="button">QUERO COMPRAR
-                                    AGORA</button></a>
+                            <a id="checkout" class="" href="#preco"><button
+                                    class="btn-buy btn btn-primary gap-2 p-3 mt-4" type="button">QUERO COMPRAR
+                                    AGORA</button>
+                                <small class="m-1 text-center" style="color: blue; display: block; margin: 0 auto;">A
+                                    partir
+                                    de só
+                                    R$44,50</small>
+                            </a>
                             <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
                         </div>
                     </div>
@@ -177,7 +313,7 @@
                 <div class="row alinhar">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <h3 class="italic mt-3"><span class="text-white">ELEITO O MELHOR BARBEADOR DE 2021</span></h3>
-                        <img class="img-fluid d-block d-sm-none mb-3" src="./assets/images/golden/Maquina-3.gif">
+                        <img class="img-fluid d-block d-sm-none mb-3" src="./assets/images/gif/maquina.gif">
                         <ul style="margin-bottom: 0" class="list-unstyled list-mobile">
                             <li class="mb-2 text-white"><i class="fas fa-check text-yellow"></i> 2 horas de bateria
                             </li>
@@ -189,14 +325,18 @@
                                 corte preciso</li>
                         </ul>
                         <div class="d-grid gap-2 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <a class="b-link" href="#preco"><button class="btn-buy btn btn-primary gap-2 p-3 mt-4"
-                                    type="button">QUERO COMPRAR
-                                    AGORA</button></a>
+                            <a id="checkout" class="" href="#preco"><button
+                                    class="btn-buy btn btn-primary gap-2 p-3 mt-4" type="button">QUERO COMPRAR
+                                    AGORA</button>
+                                <small class="m-1 text-center" style="color: white; display: block; margin: 0 auto;">A
+                                    partir
+                                    de só
+                                    R$44,50</small></a>
                             <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <img class="img-fluid d-none d-sm-block" src="./assets/images/golden/Maquina-3.gif">
+                        <img class="img-fluid d-none d-sm-block" src="./assets/images/gif/maquina.gif">
                     </div>
                 </div>
             </div>
@@ -227,9 +367,14 @@
                             corte preciso</li>
                     </ul>
                     <div class="d-grid gap-2 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <a class="b-link" href="#preco"><button class="btn-buy btn btn-primary gap-2 p-3 mt-4"
+                        <a id="checkout" class="" href="#preco"><button class="btn-buy btn btn-primary gap-2 p-3 mt-4"
                                 type="button">QUERO COMPRAR
-                                AGORA</button></a>
+                                AGORA</button>
+                            <small class="m-1 text-center" style="color: blue; display: block; margin: 0 auto;">A
+                                partir
+                                de só
+                                R$44,50</small>
+                        </a>
                         <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
                     </div>
                 </div>
@@ -237,7 +382,7 @@
         </div>
     </div>
 
-    <div class="bg-black p-4 p-md-5">
+    <!-- <div class="bg-black p-4 p-md-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -295,7 +440,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="preco">
         <div class="bg-black2 p-4 p-md-5">
@@ -357,7 +502,12 @@
             <div class="row d-flex justify-content-center">
                 <div class="d-grid gap-2 col-xs-12 col-sm-12 col-md-7 col-lg-7">
                     <a class="b-link" href="#preco"><button style="line-height: 21px;"
-                            class="btn-buy btn btn-primary gap-2 p-3" type="button">QUERO COMPRAR AGORA</button></a>
+                            class="btn-buy btn btn-primary gap-2 p-3" type="button">QUERO COMPRAR AGORA</button>
+                        <small class="m-1 text-center" style="color: blue; display: block; margin: 0 auto;">A
+                            partir
+                            de só
+                            R$44,50</small>
+                    </a>
                     <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
                 </div>
             </div>
@@ -451,7 +601,12 @@
         <div class="row d-flex justify-content-center">
             <div class="d-grid gap-2 col-xs-12 col-sm-12 col-md-7 col-lg-7">
                 <a class="b-link" href="#preco"><button class="btn-buy btn btn-primary gap-2 p-3" type="button">COMPRAR
-                        AGORA</button></a>
+                        AGORA</button>
+                    <small class="m-1 text-center" style="color: blue; display: block; margin: 0 auto;">A
+                        partir
+                        de só
+                        R$44,50</small>
+                </a>
                 <img class="img-fluid lazyload" src="./assets/images/compra-segura.webp">
             </div>
         </div>
@@ -580,7 +735,6 @@
     <script src="./assets/js/lazysizes.min.js"></script>
     <script src="./assets/js/utm-transfer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         window.lazySizesConfig = {
             addClasses: true
@@ -590,35 +744,6 @@
         var linkCheckout = 'https://seguro.goldenbarberpro.site/r/11FYDMWQZL';
         var buttons = document.querySelectorAll("#checkout");
         $(buttons).attr('href', linkCheckout);
-
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            autoplay: {
-                delay: 5000,
-            },
-            spaceBetween: 10,
-            slidesPerView: 4,
-            loop: true,
-            freeMode: true,
-            loopedSlides: 5, //looped slides should be the same
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-        var galleryTop = new Swiper('.gallery-top', {
-            autoplay: {
-                delay: 5000,
-            },
-            spaceBetween: 10,
-            loop: true,
-            loopedSlides: 5, //looped slides should be the same
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            thumbs: {
-                swiper: galleryThumbs,
-            },
-        });
-
     </script>
 </body>
 
